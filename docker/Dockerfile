@@ -1,8 +1,6 @@
 FROM node:12
 
-# clone osmbc
-RUN git clone https://github.com/TheFive/osmbc.git /var/www/osmbc
-
+COPY osmbc /var/www/
 WORKDIR /var/www/osmbc
 
 # install osmbc and dependencies
