@@ -20,9 +20,11 @@ services:
             - osmbc
 
     node:
-        build: ./osmbc/
+        build:
+          context: .
+          dockerfile: docker/Dockerfile
         volumes:
-            - ./osmbc/config.development.json:/var/www/osmbc/config.development.json:ro
+            - ./docker/config.development.json:/var/www/osmbc/config.development.json:ro
         restart: always
         environment:
             - NODE_ENV=development
