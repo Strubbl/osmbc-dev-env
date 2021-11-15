@@ -1,0 +1,3 @@
+[submodule "osmbc"]
+	path = osmbc
+	url = https://github.com/TheFive/osmbc.git
