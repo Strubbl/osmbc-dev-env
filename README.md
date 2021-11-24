@@ -7,4 +7,5 @@ To make use of this repo execute the following steps:
 3. initialize submodules via `git submodule update`
 4. `docker-compose pull` and `docker-compose build`
 5. `docker-compose up`
+6. you develop in the osbmc submodule folder now
 
